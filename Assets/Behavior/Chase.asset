@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Chase
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"enter","label":null,"summary":null,"hideLabel":false}],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Chase
+      The Player","summary":null,"pan":{"x":-5.748901,"y":-73.75015},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-487.0,"y":-257.0},"guid":"594e6341-ec4e-44a3-acbd-2914d8c235d1","$version":"A","$type":"Unity.VisualScripting.GraphInput","$id":"10"},{"kind":"Object","defaultValues":{"name":{"$content":"CurrentNode","$type":"System.String"},"object":null},"position":{"x":-256.0,"y":-248.0},"guid":"4272ebc4-ab57-4fc4-9f95-59eb3bbd4c7c","$version":"A","$type":"Unity.VisualScripting.SetVariable","$id":"12"},{"type":"System.String","value":{"$content":"Idle","$type":"System.String"},"defaultValues":{},"position":{"x":-423.0,"y":-50.0},"guid":"6301dce3-01b0-4c2e-81a0-ffeae4966b98","$version":"A","$type":"Unity.VisualScripting.Literal","$id":"14"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"Target","$type":"System.String"},"object":null},"position":{"x":-200.0,"y":-13.0},"guid":"b07e0622-727e-4f30-a494-c92d16301104","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"16"},{"chainable":false,"parameterNames":["target","speed"],"member":{"name":"Chase","parameterTypes":["UnityEngine.GameObject","System.Single"],"targetType":"BossMovements","targetTypeName":"BossMovements","$version":"A"},"defaultValues":{"target":null,"%target":null,"%speed":{"$content":0.0,"$type":"System.Single"}},"position":{"x":-5.0,"y":-190.0},"guid":"fb03bd0d-f5cc-4d98-81a3-ae1c04569d9b","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"18"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"MoveSpeed","$type":"System.String"},"object":null},"position":{"x":-125.0,"y":141.0},"guid":"1cbe6829-bf0f-412c-beee-94c957be0dc1","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"22"},{"sourceUnit":{"$ref":"12"},"sourceKey":"assigned","destinationUnit":{"$ref":"18"},"destinationKey":"enter","guid":"46991461-484d-469d-a3c2-2f50b26a08d3","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"10"},"sourceKey":"enter","destinationUnit":{"$ref":"12"},"destinationKey":"assign","guid":"ccb3cb17-8736-4f49-9b80-0ff17a0f04d8","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"output","destinationUnit":{"$ref":"12"},"destinationKey":"input","guid":"eff3140d-1c9a-4b16-83c3-cddf8df975fc","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"value","destinationUnit":{"$ref":"18"},"destinationKey":"%target","guid":"3b0a3b78-bb71-4af8-a220-6f223000bd32","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"value","destinationUnit":{"$ref":"18"},"destinationKey":"%speed","guid":"dfe4a3b5-91dc-4c5c-8aec-08e673716760","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
